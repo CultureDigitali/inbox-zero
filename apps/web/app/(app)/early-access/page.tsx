@@ -24,44 +24,47 @@ export default function RequestAccessPage() {
           <>
             <Card>
               <CardHeader>
-                <CardTitle>Sender categories</CardTitle>
+                <CardTitle>Categorie mittenti</CardTitle>
                 <CardDescription>
-                  Sender Categories is a feature that allows you to categorize
-                  emails by sender, and take bulk actions or apply rules to
-                  them.
+                  Le Categorie Mittenti sono una funzionalità che ti permette di
+                  categorizzare le email per mittente e di eseguire azioni in
+                  blocco o applicare regole.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <Button asChild>
-                  <Link href="/smart-categories">Sender Categories</Link>
+                  <Link href="/smart-categories">Categorie Mittenti</Link>
                 </Button>
               </CardContent>
             </Card>
             {/* <Card>
               <CardHeader>
-                <CardTitle>Bulk archive</CardTitle>
+                <CardTitle>Archiviazione in blocco</CardTitle>
                 <CardDescription>
-                  Archive emails from multiple senders at once, organized by
-                  category.
+                  Archivia le email da più mittenti contemporaneamente,
+                  organizzate per categoria.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <Button asChild>
-                  <Link href="/bulk-archive">Bulk Archive</Link>
+                  <Link href="/bulk-archive">Archivia in Blocco</Link>
                 </Button>
               </CardContent>
             </Card> */}
             {/* <Card>
               <CardHeader>
-                <CardTitle>Quick bulk archive</CardTitle>
+                <CardTitle>Archiviazione rapida in blocco</CardTitle>
                 <CardDescription>
-                  Quickly archive emails from multiple senders at once, grouped
-                  by AI confidence level.
+                  Archivia rapidamente le email da più mittenti
+                  contemporaneamente, raggruppate per livello di confidenza
+                  dell'AI.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <Button asChild>
-                  <Link href="/quick-bulk-archive">Quick Bulk Archive</Link>
+                  <Link href="/quick-bulk-archive">
+                    Archivia Rapida in Blocco
+                  </Link>
                 </Button>
               </CardContent>
             </Card> */}
@@ -69,15 +72,15 @@ export default function RequestAccessPage() {
         )}
         <Card>
           <CardHeader>
-            <CardTitle>Early access</CardTitle>
+            <CardTitle>Accesso anticipato</CardTitle>
             <CardDescription>
-              Give us feedback on what features you want to see.
+              Fornisci feedback su quali funzionalità vorresti vedere.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <Button asChild>
               <Link href="/waitlist" target="_blank">
-                Feedback Form
+                Form di Feedback
               </Link>
             </Button>
           </CardContent>

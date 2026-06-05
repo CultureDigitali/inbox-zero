@@ -16,15 +16,15 @@ export default function NoAccessPage() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <AlertCircle className="h-5 w-5 text-destructive" />
-            No Access
+            Nessun accesso
           </CardTitle>
           <CardDescription>
-            Email account not found or you don't have access to it
+            Account email non trovato o non hai accesso
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Button asChild>
-            <Link href="/accounts">View accounts</Link>
+            <Link href="/accounts">Visualizza account</Link>
           </Button>
         </CardContent>
       </Card>
