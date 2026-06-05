@@ -13,20 +13,20 @@ interface FooterProps {
   variant?: "default" | "simple";
 }
 
-// Simple footer for self-hosted deployments
+// Footer semplice per installazioni self-hosted
 const selfHostedFooter = {
   resources: [
     {
-      name: "Documentation",
+      name: "Documentazione",
       href: "https://docs.getinboxzero.com",
       target: "_blank",
     },
-    { name: "Contact us", href: `mailto:${env.NEXT_PUBLIC_SUPPORT_EMAIL}` },
+    { name: "Contattaci", href: `mailto:${env.NEXT_PUBLIC_SUPPORT_EMAIL}` },
     { name: "GitHub", href: "/github", target: "_blank" },
     { name: "Discord", href: "/discord", target: "_blank" },
   ],
   legal: [
-    { name: "Terms", href: "/terms" },
+    { name: "Termini", href: "/terms" },
     { name: "Privacy", href: "/privacy" },
   ],
 };
@@ -91,30 +91,30 @@ export function Footer({ className, variant = "default" }: FooterProps) {
         <nav aria-label="Footer">
           <div className="mt-16 grid grid-cols-2 gap-8 lg:grid-cols-5 xl:col-span-2 xl:mt-0">
             <div>
-              <FooterList title="Product" items={footerNavigation.main} />
+              <FooterList title="Prodotto" items={footerNavigation.main} />
             </div>
             <div>
-              <FooterList title="Use Cases" items={footerNavigation.useCases} />
+              <FooterList title="Casi d'uso" items={footerNavigation.useCases} />
               <div className="mt-6">
                 <FooterList
-                  title="Industries"
+                  title="Settori"
                   items={footerNavigation.industries}
                 />
               </div>
             </div>
             <div>
-              <FooterList title="Support" items={footerNavigation.support} />
+              <FooterList title="Supporto" items={footerNavigation.support} />
               <div className="mt-6">
-                <FooterList title="Free Tools" items={footerNavigation.tools} />
+                <FooterList title="Strumenti gratuiti" items={footerNavigation.tools} />
               </div>
             </div>
             <div>
-              <FooterList title="Company" items={footerNavigation.company} />
+              <FooterList title="Azienda" items={footerNavigation.company} />
             </div>
             <div>
-              <FooterList title="Legal" items={footerNavigation.legal} />
+              <FooterList title="Legale" items={footerNavigation.legal} />
               <div className="mt-6">
-                <FooterList title="Compare" items={footerNavigation.compare} />
+                <FooterList title="Confronta" items={footerNavigation.compare} />
               </div>
             </div>
           </div>

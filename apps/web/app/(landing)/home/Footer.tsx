@@ -7,43 +7,43 @@ import { BRAND_NAME } from "@/utils/branding";
 export const footerNavigation = {
   main: [
     {
-      name: `${BRAND_NAME} Tabs (Chrome Extension)`,
+      name: `${BRAND_NAME} Tabs (Estensione Chrome)`,
       href: EXTENSION_URL,
       target: "_blank",
     },
-    { name: "AI Email Assistant", href: "/ai-automation" },
-    { name: "Mobile App", href: "/mobile-app" },
-    { name: "AI Chat for Slack & Telegram", href: "/ai-assistant-chat" },
-    { name: "Slack AI Assistant", href: "/slack-integration" },
-    { name: "Telegram AI Assistant", href: "/telegram-integration" },
-    { name: "Teams AI Assistant", href: "/teams-integration" },
-    { name: "Brief My Meeting", href: "/brief-my-meeting" },
+    { name: "Assistente Email AI", href: "/ai-automation" },
+    { name: "App Mobile", href: "/mobile-app" },
+    { name: "Chat AI per Slack e Telegram", href: "/ai-assistant-chat" },
+    { name: "Assistente AI per Slack", href: "/slack-integration" },
+    { name: "Assistente AI per Telegram", href: "/telegram-integration" },
+    { name: "Assistente AI per Teams", href: "/teams-integration" },
+    { name: "Brief delle Riunioni", href: "/brief-my-meeting" },
     { name: "Reply Zero", href: "/reply-zero-ai" },
-    { name: "Bulk Email Unsubscriber", href: "/bulk-email-unsubscriber" },
-    { name: "Clean your inbox", href: "/clean-inbox" },
-    { name: "Cold Email Blocker", href: "/block-cold-emails" },
-    { name: "Email Analytics", href: "/email-analytics" },
-    { name: "Auto Forward Emails", href: "/auto-forward-emails" },
-    { name: "Auto-File Attachments", href: "/auto-file-email-attachments" },
+    { name: "Disiscrizione Email in Blocco", href: "/bulk-email-unsubscriber" },
+    { name: "Pulisci la tua casella", href: "/clean-inbox" },
+    { name: "Blocco Email Indesiderate", href: "/block-cold-emails" },
+    { name: "Analisi Email", href: "/email-analytics" },
+    { name: "Inoltro Email Automatico", href: "/auto-forward-emails" },
+    { name: "Archiviazione Automatica Allegati", href: "/auto-file-email-attachments" },
     { name: "Open Source", href: "/github", target: "_blank" },
   ],
   useCases: [
-    { name: "Founder", href: "/founders" },
-    { name: "Small Business", href: "/small-business" },
+    { name: "Imprenditori", href: "/founders" },
+    { name: "Piccole Imprese", href: "/small-business" },
     { name: "Content Creator", href: "/creator" },
-    { name: "Realtor", href: "/real-estate" },
+    { name: "Agenti Immobiliari", href: "/real-estate" },
     { name: "Customer Support", href: "/customer-support" },
     { name: "E-commerce", href: "/ecommerce" },
   ],
   industries: [
-    { name: "MSPs", href: "/msp" },
-    { name: "Property Management", href: "/property-management" },
-    { name: "Law Firms", href: "/law-firms" },
-    { name: "Accounting Firms", href: "/accounting-firms" },
+    { name: "MSP", href: "/msp" },
+    { name: "Gestione Immobiliare", href: "/property-management" },
+    { name: "Studi Legali", href: "/law-firms" },
+    { name: "Studi Commercialisti", href: "/accounting-firms" },
   ],
   compare: [
     {
-      name: "Best AI Email Assistants",
+      name: "Migliori Assistenti Email AI",
       href: "/blog/post/best-ai-email-assistants",
     },
     { name: "vs Fyxer.ai", href: "/best-fyxer-alternative" },
@@ -56,30 +56,30 @@ export const footerNavigation = {
   ],
   tools: [
     {
-      name: "Email Deliverability Checker",
+      name: "Verificatore di Consegna Email",
       href: "/tools/email-deliverability-checker",
     },
-    { name: "Gmail Personality Quiz", href: "/tools/gmail-quiz" },
-    { name: "Subject Line Analyzer", href: "/tools/subject-line-analyzer" },
+    { name: "Quiz Personalità Gmail", href: "/tools/gmail-quiz" },
+    { name: "Analizzatore Oggetto Email", href: "/tools/subject-line-analyzer" },
     {
-      name: "Email Signature Generator",
+      name: "Generatore Firme Email",
       href: "/tools/email-signature-generator",
     },
-    { name: "Meeting Cost Calculator", href: "/tools/meeting-cost-calculator" },
+    { name: "Calcolatore Costo Riunioni", href: "/tools/meeting-cost-calculator" },
   ],
   support: [
-    { name: "Pricing", href: "/pricing" },
-    { name: "Support", href: "/support" },
-    { name: "Contact us", href: `mailto:${env.NEXT_PUBLIC_SUPPORT_EMAIL}` },
+    { name: "Prezzi", href: "/pricing" },
+    { name: "Supporto", href: "/support" },
+    { name: "Contattaci", href: `mailto:${env.NEXT_PUBLIC_SUPPORT_EMAIL}` },
     {
-      name: "Documentation",
+      name: "Documentazione",
       href: "https://docs.getinboxzero.com",
       target: "_blank",
     },
-    { name: "Feature Requests", href: "/feature-requests", target: "_blank" },
+    { name: "Richiesta Funzionalità", href: "/feature-requests", target: "_blank" },
     { name: "Changelog", href: "/changelog", target: "_blank" },
     {
-      name: "Status",
+      name: "Stato",
       href: "https://inbox-zero.openstatus.dev/",
       target: "_blank",
     },
@@ -87,20 +87,20 @@ export const footerNavigation = {
     { name: "OpenClaw Skill", href: "/openclaw" },
   ],
   company: [
-    { name: "Affiliates", href: "/affiliates", target: "_blank" },
+    { name: "Affiliati", href: "/affiliates", target: "_blank" },
     { name: "Blog", href: "/blog" },
     { name: "Case Studies", href: "/case-studies" },
     { name: "Twitter", href: "/twitter", target: "_blank" },
     { name: "GitHub", href: "/github", target: "_blank" },
     { name: "Discord", href: "/discord", target: "_blank" },
-    { name: "OSS Friends", href: "/oss-friends" },
+    { name: "Amici Open Source", href: "/oss-friends" },
     { name: "Email Blaster", href: "/game" },
   ],
   legal: [
-    { name: "Terms", href: "/terms" },
+    { name: "Termini", href: "/terms" },
     { name: "Privacy", href: "/privacy" },
     {
-      name: "SOC2 Compliant",
+      name: "Conforme SOC2",
       href: "https://security.getinboxzero.com",
       target: "_blank",
     },
@@ -146,20 +146,20 @@ export const footerNavigation = {
   ],
 };
 
-// Simple footer for self-hosted deployments
+// Footer semplice per installazioni self-hosted
 const selfHostedFooter = {
   resources: [
     {
-      name: "Documentation",
+      name: "Documentazione",
       href: "https://docs.getinboxzero.com",
       target: "_blank",
     },
-    { name: "Contact us", href: `mailto:${env.NEXT_PUBLIC_SUPPORT_EMAIL}` },
+    { name: "Contattaci", href: `mailto:${env.NEXT_PUBLIC_SUPPORT_EMAIL}` },
     { name: "GitHub", href: "/github", target: "_blank" },
     { name: "Discord", href: "/discord", target: "_blank" },
   ],
   legal: [
-    { name: "Terms", href: "/terms" },
+    { name: "Termini", href: "/terms" },
     { name: "Privacy", href: "/privacy" },
   ],
 };
@@ -219,34 +219,34 @@ export function Footer() {
         <nav aria-label="Footer">
           <div className="mt-16 grid grid-cols-2 gap-8 lg:grid-cols-5 xl:col-span-2 xl:mt-0">
             <div>
-              <FooterList title="Product" items={footerNavigation.main} />
+              <FooterList title="Prodotto" items={footerNavigation.main} />
             </div>
             <div>
-              <FooterList title="Use Cases" items={footerNavigation.useCases} />
+              <FooterList title="Casi d'uso" items={footerNavigation.useCases} />
 
               <div className="mt-6">
                 <FooterList
-                  title="Industries"
+                  title="Settori"
                   items={footerNavigation.industries}
                 />
               </div>
 
               <div className="mt-6">
-                <FooterList title="Compare" items={footerNavigation.compare} />
+                <FooterList title="Confronta" items={footerNavigation.compare} />
               </div>
             </div>
             <div>
-              <FooterList title="Support" items={footerNavigation.support} />
+              <FooterList title="Supporto" items={footerNavigation.support} />
 
               <div className="mt-6">
-                <FooterList title="Free Tools" items={footerNavigation.tools} />
+                <FooterList title="Strumenti gratuiti" items={footerNavigation.tools} />
               </div>
             </div>
             <div>
-              <FooterList title="Company" items={footerNavigation.company} />
+              <FooterList title="Azienda" items={footerNavigation.company} />
             </div>
             <div>
-              <FooterList title="Legal" items={footerNavigation.legal} />
+              <FooterList title="Legale" items={footerNavigation.legal} />
             </div>
           </div>
         </nav>
@@ -264,8 +264,8 @@ export function Footer() {
           ))}
         </div>
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; {new Date().getFullYear()} {copyrightName}. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} {copyrightName}. Tutti i diritti
+          riservati.
         </p>
       </div>
     </footer>

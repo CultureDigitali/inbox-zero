@@ -31,9 +31,9 @@ const geist = Geist({
   display: "swap",
 });
 
-const title = `${BRAND_NAME} | Automate and clean your inbox`;
+const title = `${BRAND_NAME} | Automatizza e ripulisci la tua casella di posta`;
 const description =
-  "Your AI executive assistant to reach inbox zero fast. Automate emails, bulk unsubscribe, block cold emails, and analytics. Open-source";
+  "Il tuo assistente AI esecutivo per raggiungere inbox zero velocemente. Automatizza le email, disiscriviti in blocco, blocca le email fredde e analisi. Open-source";
 
 // JSON-LD structured data
 const jsonLd: WithContext<WebApplication> = {
@@ -43,26 +43,26 @@ const jsonLd: WithContext<WebApplication> = {
   url: env.NEXT_PUBLIC_BASE_URL,
   description,
   applicationCategory: "ProductivityApplication",
-  operatingSystem: "Web Browser",
+  operatingSystem: "Browser Web",
   offers: {
     "@type": "Offer",
     price: "20.00",
-    priceCurrency: "USD",
+    priceCurrency: "EUR",
     priceSpecification: {
       "@type": "UnitPriceSpecification",
       price: 20,
-      priceCurrency: "USD",
+      priceCurrency: "EUR",
       billingDuration: "P1M",
     },
     availability: "https://schema.org/InStock",
   },
   featureList: [
-    "AI Email Assistant",
-    "Email Automation",
-    "Bulk Unsubscribe",
-    "Cold Email Blocking",
-    "Email Analytics",
-    "Newsletter Management",
+    "Assistente Email AI",
+    "Automazione Email",
+    "Disiscrizione in Blocco",
+    "Blocco Email Indesiderate",
+    "Analisi Email",
+    "Gestione Newsletter",
   ],
   publisher: {
     "@type": "Organization",
@@ -130,7 +130,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full" suppressHydrationWarning>
+    <html lang="it" className="h-full" suppressHydrationWarning>
       <body
         className={`h-full ${env.NEXT_PUBLIC_USE_AEONIK_FONT ? aeonikFont.variable : ""} ${geist.variable} font-sans antialiased`}
       >

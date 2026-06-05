@@ -24,8 +24,8 @@ export default function NewLanding() {
     return (
       <BasicLayout>
         <Hero
-          title={`${BRAND_NAME} for self-hosted teams`}
-          subtitle={`Deploy ${BRAND_NAME} on your own infrastructure and automate your inbox with full data control.`}
+          title={`${BRAND_NAME} per team self-hosted`}
+          subtitle={`Installa ${BRAND_NAME} sulla tua infrastruttura e automatizza la tua casella di posta con il pieno controllo dei dati.`}
         />
       </BasicLayout>
     );
@@ -38,39 +38,39 @@ export default function NewLanding() {
           <WordReveal
             spaceBetween="w-2 md:w-3"
             words={[
-              "Meet",
-              "your",
-              "AI",
+              "Conosci",
+              "il",
+              "tuo",
+              "assistente",
               "email",
-              "assistant",
-              "that",
-              <em key="actually">actually</em>,
-              "works",
+              "AI",
+              <em key="veramente">che</em>,
+              "funziona",
             ]}
           />
         }
-        subtitle={`${BRAND_NAME} organizes your inbox and calendar, drafts replies in your voice, and helps you reach inbox zero fast. Never miss an important email again.`}
+        subtitle={`${BRAND_NAME} organizza la tua casella di posta e il calendario, prepara bozze di risposte nella tua voce e ti aiuta a raggiungere inbox zero velocemente. Non perdere mai più un'email importante.`}
       >
         <HeroContent />
       </Hero>
       <OrganizedInbox
         title={
           <>
-            Automatically organized.
+            Organizzata automaticamente.
             <br />
-            Never miss an important email again.
+            Non perdere mai più un'email importante.
           </>
         }
-        subtitle="Drowning in emails? Don't waste energy trying to prioritize your emails. Our AI assistant will label everything automatically."
+        subtitle="Sommerso dalle email? Non sprecare energie cercando di stabilire le priorità. Il nostro assistente AI etichetterà tutto automaticamente."
       />
       <PreWrittenDrafts
-        title="Pre-written drafts waiting in your inbox"
-        subtitle="When you check your inbox, every email needing a response will have a pre-drafted reply in your tone, ready for you to send."
+        title="Bozze pre-scritte che ti aspettano nella posta in arrivo"
+        subtitle="Quando controlli la posta, ogni email che richiede una risposta avrà una bozza pre-compilata nel tuo stile, pronta da inviare."
       />
       <ManageFromAnywhere />
       <StartedInMinutes
-        title="Get started in minutes"
-        subtitle="One-click setup. Start organizing and drafting replies in minutes."
+        title="Inizia in pochi minuti"
+        subtitle="Configurazione con un clic. Inizia subito a organizzare e preparare le risposte."
       />
       <BulkUnsubscribe />
       <AutoFileAttachments />

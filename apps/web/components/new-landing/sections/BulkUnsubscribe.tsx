@@ -13,13 +13,12 @@ export function BulkUnsubscribe() {
   return (
     <Section>
       <SectionHeading>
-        Get to Inbox Zero fast.
+        Raggiungi Inbox Zero velocemente.
         <br />
-        Bulk unsubscribe from emails you never read.
+        Disiscriviti in blocco dalle email che non leggi mai.
       </SectionHeading>
       <SectionSubtitle>
-        See which emails you never read, and one-click unsubscribe and archive
-        them.
+        Scopri quali email non leggi mai e disiscriviti e archiviale con un clic.
       </SectionSubtitle>
       <SectionContent className="flex justify-center items-center">
         <CardWrapper
@@ -29,7 +28,7 @@ export function BulkUnsubscribe() {
         >
           <Image
             src="/images/new-landing/bulk-unsubscribe.png"
-            alt="bulk unsubscribe"
+            alt="disiscrizione in blocco"
             width={1000}
             height={1000}
           />
@@ -38,7 +37,7 @@ export function BulkUnsubscribe() {
           <CardWrapper padding="xs" rounded="md" className="block md:hidden">
             <Image
               src="/images/new-landing/bulk-unsubscribe-mobile.png"
-              alt="bulk unsubscribe"
+              alt="disiscrizione in blocco"
               width={1000}
               height={1000}
             />

@@ -53,10 +53,10 @@ type PricingTier = Tier & {
 const pricingTiers: PricingTier[] = [
   {
     ...tiers[0],
-    badges: [{ message: "Save 10%", annualOnly: true }],
+    badges: [{ message: "Risparmia 10%", annualOnly: true }],
     button: {
       variant: "secondary-two",
-      content: "Try free for 7 days",
+      content: "Prova gratis per 7 giorni",
       href: "/login",
     },
     icon: <Briefcase />,
@@ -64,28 +64,28 @@ const pricingTiers: PricingTier[] = [
   {
     ...tiers[1],
     badges: [
-      { message: "Save 20%", annualOnly: true },
-      { message: "Popular", variant: "green" },
+      { message: "Risparmia 20%", annualOnly: true },
+      { message: "Popolare", variant: "green" },
     ],
     button: {
-      content: "Try free for 7 days",
+      content: "Prova gratis per 7 giorni",
       href: "/login",
     },
     icon: <Zap />,
   },
   {
     ...tiers[2],
-    badges: [{ message: "Save 16%", annualOnly: true }],
+    badges: [{ message: "Risparmia 16%", annualOnly: true }],
     button: {
       variant: "secondary-two",
-      content: "Try free for 7 days",
+      content: "Prova gratis per 7 giorni",
       href: "/login",
     },
     icon: <Sparkle />,
   },
 ];
 
-const frequencies = ["annually", "monthly"];
+const frequencies = ["annuale", "mensile"];
 
 export function Pricing() {
   const [frequency, setFrequency] = useState(frequencies[0]);
@@ -93,8 +93,8 @@ export function Pricing() {
 
   return (
     <Section id="pricing">
-      <SectionHeading>Try for free, affordable paid plans</SectionHeading>
-      <SectionSubtitle>No hidden fees. Cancel anytime.</SectionSubtitle>
+      <SectionHeading>Prova gratis, piani a pagamento convenienti</SectionHeading>
+      <SectionSubtitle>Nessun costo nascosto. Annulla quando vuoi.</SectionSubtitle>
       <SectionContent
         noMarginTop
         className="mt-6 flex flex-col items-center justify-center"
@@ -104,7 +104,7 @@ export function Pricing() {
           onChange={setFrequency}
           className="w-fit rounded-full p-1.5 text-xs font-semibold leading-5 ring-1 ring-inset ring-gray-200 mb-6 shadow-[0_0_7px_0_rgba(0,0,0,0.0.07)]"
         >
-          <Label className="sr-only">Payment frequency</Label>
+          <Label className="sr-only">Frequenza di pagamento</Label>
           {frequencies.map((value) => (
             <Radio
               key={value}
@@ -126,7 +126,7 @@ export function Pricing() {
               <PricingCard
                 tier={tier}
                 tierIndex={index}
-                isAnnual={frequency === "annually"}
+                isAnnual={frequency === "annuale"}
                 posthog={posthog}
               />
             </CardWrapper>
@@ -142,8 +142,7 @@ export function Pricing() {
                 <div>
                   <h3 className="font-title text-lg">Enterprise</h3>
                   <Paragraph size="sm" className="mt-1">
-                    Need SSO, SCIM, on-premise deployment, or a dedicated
-                    account manager?
+                    Hai bisogno di SSO, SCIM, deployment on-premise o di un account manager dedicato?
                   </Paragraph>
                 </div>
               </div>
@@ -156,12 +155,12 @@ export function Pricing() {
                     landingPageAnalytics.pricingCtaClicked(
                       posthog,
                       "Enterprise",
-                      "Speak to sales",
+                      "Parla con le vendite",
                     )
                   }
                 >
                   <Chat />
-                  <span className="relative z-10">Speak to sales</span>
+                  <span className="relative z-10">Parla con le vendite</span>
                 </Link>
               </Button>
             </CardContent>
@@ -210,11 +209,11 @@ function PricingCard({ tier, tierIndex, isAnnual, posthog }: PricingCardProps) {
               <>
                 <Subheading>${price}</Subheading>
                 <Paragraph size="xs" color="light" className="-translate-y-1">
-                  /user /month
+                  /utente /mese
                 </Paragraph>
               </>
             ) : (
-              <Subheading>Contact us</Subheading>
+              <Subheading>Contattaci</Subheading>
             )}
           </div>
           <Button auto size="lg" variant={tier.button.variant} asChild>
@@ -230,7 +229,7 @@ function PricingCard({ tier, tierIndex, isAnnual, posthog }: PricingCardProps) {
               }
             >
               {tier.button.icon}
-              {/* z-10 keeps text above gradient background on hover to prevent color shift */}
+              {/* z-10 mantiene il testo sopra lo sfondo gradient all'hover per evitare lo spostamento di colore */}
               <span className="relative z-10">{tier.button.content}</span>
             </Link>
           </Button>

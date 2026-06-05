@@ -35,7 +35,7 @@ export function Header({ className }: HeaderProps) {
             href="/login"
             onClick={() => landingPageAnalytics.logInClicked(posthog)}
           >
-            Log in
+            Accedi
           </Link>
         </Button>
         <Button asChild>
@@ -43,7 +43,7 @@ export function Header({ className }: HeaderProps) {
             href="/login"
             onClick={() => landingPageAnalytics.getStartedClicked(posthog)}
           >
-            <span className="relative z-10">Get started free</span>
+            <span className="relative z-10">Inizia gratis</span>
           </Link>
         </Button>
       </div>
