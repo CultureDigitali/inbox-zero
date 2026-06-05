@@ -3,9 +3,9 @@ import { BRAND_NAME, SUPPORT_EMAIL } from "@/utils/branding";
 export function getRequiresReconsentDescription(options?: {
   includeSupportText?: boolean;
 }) {
-  const description = `Please sign in again and approve every requested permission. If your Microsoft 365 organization requires admin approval, ask your admin to approve ${BRAND_NAME} first.`;
+  const description = `Accedi di nuovo e approva ogni permesso richiesto. Se la tua organizzazione Microsoft 365 richiede l'approvazione dell'amministratore, chiedi al tuo amministratore di approvare ${BRAND_NAME} prima.`;
 
   if (!options?.includeSupportText) return description;
 
-  return `${description} If this error persists please contact support at ${SUPPORT_EMAIL}`;
+  return `${description} Se l'errore persiste, contatta il supporto a ${SUPPORT_EMAIL}`;
 }

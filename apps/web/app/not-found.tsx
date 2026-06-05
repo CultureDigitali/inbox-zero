@@ -12,14 +12,14 @@ export default function NotFound() {
   const pathname = usePathname();
 
   useEffect(() => {
-    logger.warn("Page not found", { pathname });
+    logger.warn("Pagina non trovata", { pathname });
   }, [pathname]);
 
   return (
     <BasicLayout>
       <ErrorPage
-        title="Page Not Found"
-        description="The page you are looking for could not be found."
+        title="Pagina non trovata"
+        description="La pagina che stai cercando non è stata trovata."
       />
     </BasicLayout>
   );

@@ -12,12 +12,12 @@ export default function GlobalError({ error }: any) {
   }, [error]);
 
   return (
-    <html lang="en">
+    <html lang="it">
       <body className="p-4">
         <ErrorDisplay error={{ error: error?.message }} />
 
         <div className="mt-4">
-          <Button onClick={() => window.location.reload()}>Reload Page</Button>
+          <Button onClick={() => window.location.reload()}>Ricarica la pagina</Button>
         </div>
       </body>
     </html>

@@ -22,8 +22,8 @@ import {
 } from "@/utils/branding";
 
 export const metadata: Metadata = {
-  title: getBrandTitle("Log in"),
-  description: `Log in to ${BRAND_NAME}.`,
+  title: getBrandTitle("Accedi"),
+  description: `Accedi a ${BRAND_NAME}.`,
   alternates: { canonical: "/login" },
 };
 
@@ -45,9 +45,9 @@ export default async function AuthenticationPage(props: {
     <div className="flex h-screen flex-col justify-center text-foreground">
       <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
         <div className="flex flex-col text-center">
-          <h1 className="font-title text-2xl text-foreground">Sign In</h1>
+          <h1 className="font-title text-2xl text-foreground">Accedi</h1>
           <p className="mt-4 text-muted-foreground">
-            Your AI personal assistant for email.
+            Il tuo assistente personale AI per le email.
           </p>
         </div>
         <div className="mt-4">
@@ -63,14 +63,14 @@ export default async function AuthenticationPage(props: {
 
         {!isSelfHosted ? (
           <MutedText className="px-8 pt-10 text-center">
-            By clicking continue, you agree to our{" "}
+            Cliccando su continua, accetti i nostri{" "}
             <Link
               href="/terms"
               className="underline underline-offset-4 hover:text-foreground"
             >
-              Terms of Service
+              Termini di Servizio
             </Link>{" "}
-            and{" "}
+            e la{" "}
             <Link
               href="/privacy"
               className="underline underline-offset-4 hover:text-foreground"
@@ -118,15 +118,16 @@ function LoginFooter({
         isSelfHosted ? "px-4 pt-10 text-center" : "px-4 pt-4 text-center"
       }
     >
-      {getPossessiveBrandName()} use and transfer of information received from
-      Google APIs to any other app will adhere to{" "}
+      L{`'`}uso e il trasferimento delle informazioni ricevute dalle API di
+      Google a qualsiasi altra app da parte di {getPossessiveBrandName()} saranno
+      conformi alla{" "}
       <a
         href="https://developers.google.com/terms/api-services-user-data-policy"
         className="underline underline-offset-4 hover:text-foreground"
       >
-        Google API Services User Data
-      </a>{" "}
-      Policy, including the Limited Use requirements.
+        Policy dei Servizi API di Google
+      </a>
+      , inclusi i requisiti di Limited Use.
     </MutedText>
   );
 }
@@ -136,7 +137,7 @@ function ErrorAlert({ error }: { error: string }) {
     return (
       <AlertBasic
         variant="destructive"
-        title="Permissions need to be refreshed"
+        title="I permessi devono essere aggiornati"
         description={getRequiresReconsentDescription({
           includeSupportText: true,
         })}
@@ -148,12 +149,12 @@ function ErrorAlert({ error }: { error: string }) {
     return (
       <AlertBasic
         variant="destructive"
-        title="Account already attached to another user"
+        title="Account già collegato a un altro utente"
         description={
           <>
-            <span>You can merge accounts instead.</span>
+            <span>Puoi unire gli account.</span>
             <Button asChild className="mt-2">
-              <Link href="/accounts">Merge accounts</Link>
+              <Link href="/accounts">Unisci account</Link>
             </Button>
           </>
         }
@@ -165,8 +166,8 @@ function ErrorAlert({ error }: { error: string }) {
     return (
       <AlertBasic
         variant="destructive"
-        title="Email Already Linked"
-        description={`This email address is already linked to another ${BRAND_NAME} account. Please sign in with the original account, or use a different email address. If this error persists please contact support at ${SUPPORT_EMAIL}`}
+        title="Email già collegata"
+        description={`Questo indirizzo email è già collegato a un altro account ${BRAND_NAME}. Accedi con l'account originale, o usa un indirizzo email diverso. Se l'errore persiste, contatta il supporto a ${SUPPORT_EMAIL}`}
       />
     );
   }
@@ -175,8 +176,8 @@ function ErrorAlert({ error }: { error: string }) {
     <>
       <AlertBasic
         variant="destructive"
-        title="Error logging in"
-        description={`There was an error logging in. Please try logging in again. If this error persists please contact support at ${SUPPORT_EMAIL}`}
+        title="Errore di accesso"
+        description={`C'è stato un errore durante l'accesso. Riprova ad accedere. Se l'errore persiste, contatta il supporto a ${SUPPORT_EMAIL}`}
       />
       <Suspense>
         <CrispChatLoggedOutVisible />
