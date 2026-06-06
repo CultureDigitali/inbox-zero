@@ -23,14 +23,14 @@ import {
 const navigation = [
   { name: "Enterprise", href: "/enterprise" },
   { name: "Case Studies", href: "/case-studies" },
-  { name: "Pricing", href: "/pricing" },
+  { name: "Prezzi", href: "/pricing" },
 ];
 
 const useCases = [
   {
-    title: "Founders",
+    title: "Imprenditori",
     href: "/founders",
-    description: "Scale your startup while AI handles your inbox",
+    description: "Fai crescere la tua startup mentre l'AI gestisce la posta",
     icon: RocketIcon,
     iconColor: "text-new-purple-600",
     borderColor: "from-new-purple-200 to-new-purple-300",
@@ -38,9 +38,9 @@ const useCases = [
     hoverBg: "hover:bg-new-purple-50/[0.44]",
   },
   {
-    title: "Small Business",
+    title: "Piccole Imprese",
     href: "/small-business",
-    description: "Grow your business with automated email management",
+    description: "Cresci la tua attività con la gestione email automatizzata",
     icon: BuildingIcon,
     iconColor: "text-new-green-500",
     borderColor: "from-new-green-150 to-new-green-200",
@@ -48,9 +48,9 @@ const useCases = [
     hoverBg: "hover:bg-new-green-50",
   },
   {
-    title: "Content Creators",
+    title: "Content Creator",
     href: "/creator",
-    description: "Streamline brand partnerships and collaborations",
+    description: "Ottimizza le collaborazioni e i patrocini del tuo brand",
     icon: UserIcon,
     iconColor: "text-new-blue-600",
     borderColor: "from-new-blue-150 to-new-blue-200",
@@ -58,9 +58,9 @@ const useCases = [
     hoverBg: "hover:bg-new-blue-50/50",
   },
   {
-    title: "Real Estate",
+    title: "Immobiliare",
     href: "/real-estate",
-    description: "AI email management for real estate professionals",
+    description: "Gestione email AI per professionisti immobiliari",
     icon: HomeIcon,
     iconColor: "text-new-pink-500",
     borderColor: "from-new-pink-150 to-new-pink-200",
@@ -70,7 +70,7 @@ const useCases = [
   {
     title: "Customer Support",
     href: "/customer-support",
-    description: "Deliver faster support with AI-powered responses",
+    description: "Offri supporto più veloce con risposte basate su AI",
     icon: HeadphonesIcon,
     iconColor: "text-new-orange-600",
     borderColor: "from-new-orange-150 to-new-orange-200",
@@ -80,7 +80,7 @@ const useCases = [
   {
     title: "E-commerce",
     href: "/ecommerce",
-    description: "Automate order updates and customer communications",
+    description: "Automatizza aggiornamenti ordini e comunicazioni clienti",
     icon: ShoppingCartIcon,
     iconColor: "text-new-indigo-600",
     borderColor: "from-new-indigo-150 to-new-indigo-200",
@@ -94,10 +94,10 @@ export function HeaderLinks() {
     <div className="hidden lg:flex lg:items-center lg:gap-x-8">
       <NavigationMenu>
         <NavigationMenuList>
-          {/* Solutions Dropdown */}
+          {/* Dropdown Soluzioni */}
           <NavigationMenuItem>
             <NavigationMenuTrigger className="text-sm font-semibold font-geist leading-6 text-gray-900">
-              Solutions
+              Soluzioni
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[640px] grid-cols-2 gap-2 p-4">
@@ -119,7 +119,7 @@ export function HeaderLinks() {
             </NavigationMenuContent>
           </NavigationMenuItem>
 
-          {/* Regular Navigation Items */}
+          {/* Voci di navigazione regolari */}
           {navigation.map((item) => (
             <NavigationMenuItem key={item.name}>
               <NavigationMenuLink
